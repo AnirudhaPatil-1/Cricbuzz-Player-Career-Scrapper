@@ -47,7 +47,7 @@ async function getCareerData(url, i, totalPlayers) {
         await browser.close();
         playersAdded += 1;
         if(playersAdded == totalPlayers) {
-            fs.writeFileSync("career.json", JSON.stringify(carrerData));
+            fs.writeFileSync("Output(PlayerCareer).json", JSON.stringify(carrerData));
         }
 } 
  

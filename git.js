@@ -45,7 +45,7 @@ async function getIssues(url, i, j) {
     }
     projectsCovered += 1;
     if(projectsCovered == totalProjects) {
-        fs.writeFileSync("finalData.json", JSON.stringify(finalData));
+        // fs.writeFileSync("finalData.json", JSON.stringify(finalData));
     }
     browser.close();
 }
