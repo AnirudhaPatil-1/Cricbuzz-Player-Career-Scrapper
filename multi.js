@@ -50,7 +50,7 @@ async function getCareerData(url, i, totalPlayers) {
             fs.writeFileSync("Output(PlayerCareer).json", JSON.stringify(carrerData));
         }
 } 
- 
+
 async function main() {
     await browser.get(`https://www.cricbuzz.com/live-cricket-scores/${matchId}`);
     await browser.wait(wd.until.elementLocated(wd.By.css(".cb-nav-bar a")));
